@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Load the image of the empty chessboard
-empty_board_image = cv2.imread('C:\\Projects\\facesempty.jpg')
+empty_board_image = cv2.imread('C:\\Projects\\board_blank.jpg')
 
 # Convert to grayscale
 gray_empty = cv2.cvtColor(empty_board_image, cv2.COLOR_BGR2GRAY)
