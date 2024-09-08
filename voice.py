@@ -4,7 +4,7 @@ import pyttsx3
 engine = pyttsx3.init()
 
 # Set properties (optional)
-engine.setProperty('rate', 190)    # Speed percent (can go over 100)
+engine.setProperty('rate', 160)    # Speed percent (can go over 100)
 engine.setProperty('volume', 1)  # Volume 0-1
 
 # Convert text to speech
