@@ -170,21 +170,4 @@ public class BoardStateTracker : MonoBehaviour
         //Debug.Log("response move is " + responseMove);
         Stockfish.inst.recommendedMove = "";
     }
-
-    void CreateSprites()
-    {
-        float step = 0.62f * 1.1f;
-        Vector3 pos = tilesParent.position;
-        for (int i = 0; i < 8; i++)
-        {
-            for (int x = 0; x < 8; x++)
-            {
-                var obj = Instantiate(tileObject, pos, Quaternion.identity, tilesParent);
-                tiles2.Add(obj);
-                pos.x -= step;
-            }
-            pos.x += step * 8;
-            pos.y += step;
-        }
-    }
 }

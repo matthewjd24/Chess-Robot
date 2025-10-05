@@ -1,0 +1,26 @@
+[
+{
+  "directory": "C:/Users/matt/Documents/GitHub/Chess-Robot/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -I/usr/local/include -g -std=gnu++17 -o CMakeFiles\\program.dir\\main.cpp.obj -c C:\\Users\\matt\\Documents\\GitHub\\Chess-Robot\\Raspberry-Pi-Embedded-C++\\main.cpp",
+  "file": "C:/Users/matt/Documents/GitHub/Chess-Robot/Raspberry-Pi-Embedded-C++/main.cpp",
+  "output": "C:/Users/matt/Documents/GitHub/Chess-Robot/build/CMakeFiles/program.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/matt/Documents/GitHub/Chess-Robot/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -I/usr/local/include -g -std=gnu++17 -o CMakeFiles\\program.dir\\dynamixel.cpp.obj -c C:\\Users\\matt\\Documents\\GitHub\\Chess-Robot\\Raspberry-Pi-Embedded-C++\\dynamixel.cpp",
+  "file": "C:/Users/matt/Documents/GitHub/Chess-Robot/Raspberry-Pi-Embedded-C++/dynamixel.cpp",
+  "output": "C:/Users/matt/Documents/GitHub/Chess-Robot/build/CMakeFiles/program.dir/dynamixel.cpp.obj"
+},
+{
+  "directory": "C:/Users/matt/Documents/GitHub/Chess-Robot/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -I/usr/local/include -g -std=gnu++17 -o CMakeFiles\\program.dir\\board_state_tracker.cpp.obj -c C:\\Users\\matt\\Documents\\GitHub\\Chess-Robot\\Raspberry-Pi-Embedded-C++\\board_state_tracker.cpp",
+  "file": "C:/Users/matt/Documents/GitHub/Chess-Robot/Raspberry-Pi-Embedded-C++/board_state_tracker.cpp",
+  "output": "C:/Users/matt/Documents/GitHub/Chess-Robot/build/CMakeFiles/program.dir/board_state_tracker.cpp.obj"
+},
+{
+  "directory": "C:/Users/matt/Documents/GitHub/Chess-Robot/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -I/usr/local/include -g -std=gnu++17 -o CMakeFiles\\program.dir\\target_position_calculator.cpp.obj -c C:\\Users\\matt\\Documents\\GitHub\\Chess-Robot\\Raspberry-Pi-Embedded-C++\\target_position_calculator.cpp",
+  "file": "C:/Users/matt/Documents/GitHub/Chess-Robot/Raspberry-Pi-Embedded-C++/target_position_calculator.cpp",
+  "output": "C:/Users/matt/Documents/GitHub/Chess-Robot/build/CMakeFiles/program.dir/target_position_calculator.cpp.obj"
+}
+]

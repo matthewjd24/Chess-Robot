@@ -1,0 +1,8 @@
+{
+  "clangd.arguments": [
+    "-std=c++17",
+    "-IC:/vcpkg/installed/x64-windows/include",
+    "--query-driver=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/*/bin/Hostx64/x64/cl.exe"
+  ],
+  "cmake.sourceDirectory": "C:/Users/matt/Documents/GitHub/Chess-Robot/Raspberry-Pi-Embedded-C++"
+}
