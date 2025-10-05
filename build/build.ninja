@@ -49,33 +49,41 @@ cmake_ninja_workdir = C$:/Users/matt/Documents/GitHub/Chess-Robot/build/
 
 build cmake_object_order_depends_target_program: phony || .
 
-build CMakeFiles/program.dir/main.cpp.obj: CXX_COMPILER__program_unscanned_Debug C$:/Users/matt/Documents/GitHub/Chess-Robot/Raspberry-Pi-Embedded-C++/main.cpp || cmake_object_order_depends_target_program
+build CMakeFiles/program.dir/Main.cpp.obj: CXX_COMPILER__program_unscanned_Debug C$:/Users/matt/Documents/GitHub/Chess-Robot/Raspberry-Pi-Embedded-C++/Main.cpp || cmake_object_order_depends_target_program
   CONFIG = Debug
-  DEP_FILE = CMakeFiles\program.dir\main.cpp.obj.d
+  DEP_FILE = CMakeFiles\program.dir\Main.cpp.obj.d
   FLAGS = -g -std=gnu++17
   INCLUDES = -I/usr/local/include
   OBJECT_DIR = CMakeFiles\program.dir
   OBJECT_FILE_DIR = CMakeFiles\program.dir
 
-build CMakeFiles/program.dir/dynamixel.cpp.obj: CXX_COMPILER__program_unscanned_Debug C$:/Users/matt/Documents/GitHub/Chess-Robot/Raspberry-Pi-Embedded-C++/dynamixel.cpp || cmake_object_order_depends_target_program
+build CMakeFiles/program.dir/Dynamixel.cpp.obj: CXX_COMPILER__program_unscanned_Debug C$:/Users/matt/Documents/GitHub/Chess-Robot/Raspberry-Pi-Embedded-C++/Dynamixel.cpp || cmake_object_order_depends_target_program
   CONFIG = Debug
-  DEP_FILE = CMakeFiles\program.dir\dynamixel.cpp.obj.d
+  DEP_FILE = CMakeFiles\program.dir\Dynamixel.cpp.obj.d
   FLAGS = -g -std=gnu++17
   INCLUDES = -I/usr/local/include
   OBJECT_DIR = CMakeFiles\program.dir
   OBJECT_FILE_DIR = CMakeFiles\program.dir
 
-build CMakeFiles/program.dir/board_state_tracker.cpp.obj: CXX_COMPILER__program_unscanned_Debug C$:/Users/matt/Documents/GitHub/Chess-Robot/Raspberry-Pi-Embedded-C++/board_state_tracker.cpp || cmake_object_order_depends_target_program
+build CMakeFiles/program.dir/BoardStateTracker.cpp.obj: CXX_COMPILER__program_unscanned_Debug C$:/Users/matt/Documents/GitHub/Chess-Robot/Raspberry-Pi-Embedded-C++/BoardStateTracker.cpp || cmake_object_order_depends_target_program
   CONFIG = Debug
-  DEP_FILE = CMakeFiles\program.dir\board_state_tracker.cpp.obj.d
+  DEP_FILE = CMakeFiles\program.dir\BoardStateTracker.cpp.obj.d
   FLAGS = -g -std=gnu++17
   INCLUDES = -I/usr/local/include
   OBJECT_DIR = CMakeFiles\program.dir
   OBJECT_FILE_DIR = CMakeFiles\program.dir
 
-build CMakeFiles/program.dir/target_position_calculator.cpp.obj: CXX_COMPILER__program_unscanned_Debug C$:/Users/matt/Documents/GitHub/Chess-Robot/Raspberry-Pi-Embedded-C++/target_position_calculator.cpp || cmake_object_order_depends_target_program
+build CMakeFiles/program.dir/TargetPositionCalculator.cpp.obj: CXX_COMPILER__program_unscanned_Debug C$:/Users/matt/Documents/GitHub/Chess-Robot/Raspberry-Pi-Embedded-C++/TargetPositionCalculator.cpp || cmake_object_order_depends_target_program
   CONFIG = Debug
-  DEP_FILE = CMakeFiles\program.dir\target_position_calculator.cpp.obj.d
+  DEP_FILE = CMakeFiles\program.dir\TargetPositionCalculator.cpp.obj.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/usr/local/include
+  OBJECT_DIR = CMakeFiles\program.dir
+  OBJECT_FILE_DIR = CMakeFiles\program.dir
+
+build CMakeFiles/program.dir/ArmMovement.cpp.obj: CXX_COMPILER__program_unscanned_Debug C$:/Users/matt/Documents/GitHub/Chess-Robot/Raspberry-Pi-Embedded-C++/ArmMovement.cpp || cmake_object_order_depends_target_program
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\program.dir\ArmMovement.cpp.obj.d
   FLAGS = -g -std=gnu++17
   INCLUDES = -I/usr/local/include
   OBJECT_DIR = CMakeFiles\program.dir
@@ -89,7 +97,7 @@ build CMakeFiles/program.dir/target_position_calculator.cpp.obj: CXX_COMPILER__p
 #############################################
 # Link the executable program.exe
 
-build program.exe: CXX_EXECUTABLE_LINKER__program_Debug CMakeFiles/program.dir/main.cpp.obj CMakeFiles/program.dir/dynamixel.cpp.obj CMakeFiles/program.dir/board_state_tracker.cpp.obj CMakeFiles/program.dir/target_position_calculator.cpp.obj
+build program.exe: CXX_EXECUTABLE_LINKER__program_Debug CMakeFiles/program.dir/Main.cpp.obj CMakeFiles/program.dir/Dynamixel.cpp.obj CMakeFiles/program.dir/BoardStateTracker.cpp.obj CMakeFiles/program.dir/TargetPositionCalculator.cpp.obj CMakeFiles/program.dir/ArmMovement.cpp.obj
   CONFIG = Debug
   FLAGS = -g
   LINK_LIBRARIES = -ldxl_sbc_cpp  -lpthread  -lrt  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32

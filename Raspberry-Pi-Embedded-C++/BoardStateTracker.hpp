@@ -15,11 +15,11 @@ class BoardStateTracker {
 public:
     BoardStateTracker();
 
-    void reset_start_position();
+    void ResetStartPosition();
 
-    std::string convert_to_fen() const;
+    std::string ConvertToFEN() const;
 
-    std::string run_analysis_of_board(const std::vector<TileAnalysis>& analyses);
+    std::string RunAnalysisOfBoard(const std::vector<TileAnalysis>& analyses);
 
     const std::array<std::array<char, 9>, 9>& board() const { return board_; }
 

@@ -1,3 +1,5 @@
+// handles low level control of the servos in the joints of the arm
+
 #ifndef DYNAMIXEL_HPP
 #define DYNAMIXEL_HPP
 
@@ -38,24 +40,24 @@ public:
 
     ~DxlServo();
 
-    void initialize();
-    void torque_mode();
-    void set_torque(double torque_nm);
-    void set_pid_gains(uint16_t p_gain, uint16_t i_gain, uint16_t d_gain);
-    void enable_torque();
-    void disable_torque();
-    int get_present_position();
-    double get_present_position_degrees();
-    void set_velocity_and_acceleration(uint32_t velocity, uint32_t acceleration);
-    void move_to_with_velocity(double goal_deg);
-    double convert_servo_position_to_degrees(int servo_position) const;
-    void set_position(double pos_deg, int velocity = -1);
-    void close();
-    int convert_degrees_to_servo_position(double pos_deg) const;
+    void Initialize();
+    void TorqueMode();
+    void SetTorque(double torque_nm);
+    void SetPIDGains(uint16_t p_gain, uint16_t i_gain, uint16_t d_gain);
+    void EnableTorque();
+    void DisableTorque();
+    int GetPresentPosition();
+    double GetPresentPositionDegrees();
+    void SetVelocityAndAcceleration(uint32_t velocity, uint32_t acceleration);
+    void MoveToWithVelocity(double goal_deg);
+    double ConvertServoPositionToDegrees(int servo_position) const;
+    void SetPosition(double pos_deg, int velocity = -1);
+    void Close();
+    int ConvertDegreesToServoPosition(double pos_deg) const;
 
 private:
-    void write2B(int addr, uint16_t val, const char* what);
-    void write4B(int addr, uint32_t val, const char* what);
+    void Write2B(int addr, uint16_t val, const char* what);
+    void Write4B(int addr, uint32_t val, const char* what);
 
 private:
     std::string PORT_NAME;

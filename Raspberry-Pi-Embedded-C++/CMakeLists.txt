@@ -6,10 +6,11 @@ set(CMAKE_CXX_STANDARD 17)
 
 # Add source files
 set(SOURCES
-	main.cpp
-	dynamixel.cpp
-	board_state_tracker.cpp
-	target_position_calculator.cpp
+	Main.cpp
+	Dynamixel.cpp
+	BoardStateTracker.cpp
+	TargetPositionCalculator.cpp
+    ArmMovement.cpp
 )
 
 # Include directories

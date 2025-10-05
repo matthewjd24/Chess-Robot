@@ -1,4 +1,4 @@
-#include "board_state_tracker.hpp"
+#include "BoardStateTracker.hpp"
 
 #include <algorithm>
 #include <sstream>
@@ -8,10 +8,10 @@ BoardStateTracker::BoardStateTracker() {
     for (int i = 0; i <= 8; ++i) {
         for (int j = 0; j <= 8; ++j) board_[i][j] = '\0';
     }
-    reset_start_position();
+    ResetStartPosition();
 }
 
-void BoardStateTracker::reset_start_position() {
+void BoardStateTracker::ResetStartPosition() {
     // clear
     for (int i = 1; i <= 8; ++i) for (int j = 1; j <= 8; ++j) board_[i][j] = '\0';
 
@@ -38,7 +38,7 @@ void BoardStateTracker::reset_start_position() {
     for (int j = 1; j <= 8; ++j) board_[7][j] = 'p';
 }
 
-std::string BoardStateTracker::convert_to_fen() const {
+std::string BoardStateTracker::ConvertToFEN() const {
     std::ostringstream fen;
     fen << "position fen ";
 
@@ -64,6 +64,6 @@ std::string BoardStateTracker::convert_to_fen() const {
     return fen.str();
 }
 
-std::string BoardStateTracker::run_analysis_of_board(const std::vector<TileAnalysis>& analyses) {
+std::string BoardStateTracker::RunAnalysisOfBoard(const std::vector<TileAnalysis>& analyses) {
     return "Not implemented";
 }
