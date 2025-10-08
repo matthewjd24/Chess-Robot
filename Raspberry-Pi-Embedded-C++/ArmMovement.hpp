@@ -22,6 +22,10 @@ public:
     void MoveGripperToTile(int col, int row, double zHeight);
     void MoveGripperToPosition(XYZ position);
     void MoveGripperToJointAngles(JointAngles angles);
+    JointAngles GetTargetAngles(int col, int row, double zHeight);
+    JointAngles GetCurrentAngles();
+    void DisableTorqueAllServos();
+    void EnableTorqueAllServos();
     DxlServo BaseServo;
     DxlServo ShoulderServo;
     DxlServo ElbowServo;
